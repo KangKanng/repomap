@@ -1,0 +1,11 @@
+agent:
+  repomap:
+    mode: full
+    # A positive value enables the map; full mode ignores the token cap. Zero still disables it.
+    map_tokens: 1024
+    refresh: once
+    context_messages: 0
+    strict: true
+    max_files: null
+    max_file_bytes: null
+    max_total_bytes: null

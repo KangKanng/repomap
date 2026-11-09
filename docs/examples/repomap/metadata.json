@@ -1,0 +1,33 @@
+{
+  "source_run": "benchmarks/results/swebench-offline20-20261029T095019Z",
+  "examples": [
+    {
+      "repo": "pallets/flask",
+      "instance_id": "pallets__flask-5014",
+      "source_lines": 17478,
+      "file": "flask-5014.txt",
+      "map_tokens": 1014,
+      "tokenizer": "cl100k_base",
+      "map_lines": 160,
+      "listed_files": 17,
+      "trajectory": "benchmarks/results/swebench-offline20-20261029T095019Z/repomap/SWE-bench_Verified/pallets__flask-5014/pallets__flask-5014.traj.json",
+      "message_index": 2,
+      "sha256": "5c83a3114239f33342dbdb2547e70df18b743d7b031166378ed0eaa21a6fdf17",
+      "snapshot": "final map retained in the completed trajectory"
+    },
+    {
+      "repo": "django/django",
+      "instance_id": "django__django-10097",
+      "source_lines": 352429,
+      "file": "django-10097.txt",
+      "map_tokens": 1022,
+      "tokenizer": "cl100k_base",
+      "map_lines": 175,
+      "listed_files": 20,
+      "trajectory": "benchmarks/results/swebench-offline20-20261029T095019Z/repomap/SWE-bench_Verified/django__django-10097/django__django-10097.traj.json",
+      "message_index": 2,
+      "sha256": "a9f4c687ffd6d0fa5cc2bfbefafa5e7ec3ac3aaf1496aa1722ab0ed6a4863e8d",
+      "snapshot": "final map retained in the completed trajectory"
+    }
+  ]
+}

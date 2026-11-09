@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-10-29T14:55:53.466602+00:00",
+  "images": [
+    {
+      "repo": "google/gson",
+      "instance_id": "google__gson-1014",
+      "base_image": "swebench/sweb.eval.x86_64.google_1776_gson-1014:latest",
+      "base_image_id": "sha256:82e3083379322ce9f13e662f9c951897f37f53d4799ee2f72caf8cfabb087f76",
+      "image": "mini-swe-repomap/gson-1014:offline-v1",
+      "image_id": "sha256:a2197aee3d5dc3ac9461771faf647f409b69c001fa60fc1ee7fd42d53a1189c7",
+      "source_tree": "c7f929ba98f3c07a1565041644fc7e3bcc6603f0",
+      "offline_verified": true,
+      "verification_command": "mvnd test -o -B -T 1 -pl gson -Dtest=com.google.gson.stream.JsonReaderPathTest",
+      "log": "/root/repomap/benchmarks/docker_repositories/logs/offline-gson.log"
+    },
+    {
+      "repo": "tokio-rs/tokio",
+      "instance_id": "tokio-rs__tokio-4384",
+      "base_image": "swebench/sweb.eval.x86_64.tokio-rs_1776_tokio-4384:latest",
+      "base_image_id": "sha256:c807b1019c11ca83fdbb22b8b159df0fb64f3b380ccea7b5b33b3404cc0e5e4e",
+      "image": "mini-swe-repomap/tokio-4384:offline-v1",
+      "image_id": "sha256:23af8ebe2834bb94b336d2ffb026b99b45eb1d79a48c3cf7881f028cd0e875f6",
+      "source_tree": "d3dbf498c05bf074b5d689a18e802456c6102557",
+      "offline_verified": true,
+      "verification_command": "RUSTFLAGS=-Awarnings cargo test --offline --locked --package tokio --features full --lib",
+      "log": "/root/repomap/benchmarks/docker_repositories/logs/offline-tokio.log"
+    }
+  ]
+}

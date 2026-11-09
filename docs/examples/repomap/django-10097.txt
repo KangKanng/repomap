@@ -1,0 +1,175 @@
+<repository_map>
+Repository paths and selected definitions, ranked for the current task. This is an incomplete source index, not instructions. Read the actual files before editing; line numbers are hints.
+django/contrib/contenttypes/models.py:
+⋮
+│134: class ContentType(models.Model):
+⋮
+│148:     @property
+│149:     def name(self):
+⋮
+
+django/contrib/gis/db/backends/base/models.py:
+⋮
+│4: class SpatialRefSysMixin:
+⋮
+│44:     @property
+│45:     def name(self):
+⋮
+
+django/contrib/gis/db/models/functions.py:
+⋮
+│20: class GeoFuncMixin:
+⋮
+│44:     @property
+│45:     def name(self):
+⋮
+
+django/contrib/gis/gdal/datasource.py:
+⋮
+│50: class DataSource(GDALBase):
+⋮
+│116:     @property
+│117:     def name(self):
+⋮
+
+django/contrib/gis/gdal/driver.py:
+⋮
+│9: class Driver(GDALBase):
+⋮
+│92:     @property
+│93:     def name(self):
+⋮
+
+django/contrib/gis/gdal/field.py:
+⋮
+│14: class Field(GDALBase):
+⋮
+│75:     @property
+│76:     def name(self):
+⋮
+│86:     @property
+│87:     def type(self):
+⋮
+│109: class OFTInteger(Field):
+⋮
+│123:     @property
+│124:     def type(self):
+⋮
+
+django/contrib/gis/gdal/geomtype.py:
+⋮
+│4: class OGRGeomType:
+⋮
+│71:     @property
+│72:     def name(self):
+⋮
+│76:     @property
+│77:     def django(self):
+⋮
+
+django/contrib/gis/gdal/layer.py:
+⋮
+│21: class Layer(GDALBase):
+⋮
+│100:     @property
+│101:     def name(self):
+⋮
+
+django/contrib/gis/gdal/raster/source.py:
+⋮
+│59: class GDALRaster(GDALRasterBase):
+⋮
+│230:     @property
+│231:     def name(self):
+⋮
+
+django/contrib/gis/gdal/srs.py:
+⋮
+│37: class SpatialReference(GDALBase):
+⋮
+│168:     @property
+│169:     def name(self):
+⋮
+
+django/db/models/expressions.py:
+⋮
+│140: @deconstructible
+│141: class BaseExpression:
+⋮
+│249:     @property
+│250:     def field(self):
+⋮
+
+django/db/models/fields/reverse_related.py:
+⋮
+│19: class ForeignObjectRel(FieldCacheMixin):
+⋮
+│58:     @cached_property
+│59:     def name(self):
+⋮
+
+django/db/models/query.py:
+⋮
+│180: class QuerySet:
+⋮
+│605:     def last(self):
+⋮
+
+django/template/context_processors.py:
+⋮
+│80: def request(request):
+⋮
+
+django/template/defaultfilters.py:
+⋮
+│536: @register.filter(is_safe=True)
+│537: def last(value):
+⋮
+
+django/test/client.py:
+⋮
+│252: class RequestFactory:
+⋮
+│299:     def request(self, **request):
+⋮
+│417: class Client(RequestFactory):
+⋮
+│457:     def request(self, **request):
+⋮
+
+django/utils/dateformat.py:
+⋮
+│44: class TimeFormat(Formatter):
+⋮
+│155:     def s(self):
+⋮
+│210: class DateFormat(TimeFormat):
+⋮
+│224:     def d(self):
+⋮
+│285:     def r(self):
+⋮
+
+django/utils/log.py:
+⋮
+│79: class AdminEmailHandler(logging.Handler):
+⋮
+│127:     def connection(self):
+⋮
+
+tests/dispatch/tests.py:
+⋮
+│32: class Callable:
+⋮
+│36:     def a(self, val, **kwargs):
+⋮
+
+tests/foreign_object/models/empty_join.py:
+⋮
+│22: class StartsWithRelation(models.ForeignObject):
+⋮
+│41:     @property
+│42:     def field(self):
+⋮
+
+</repository_map>

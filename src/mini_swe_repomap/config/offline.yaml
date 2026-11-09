@@ -1,0 +1,16 @@
+environment:
+  run_args: ["--rm", "--pull=never", "--network=none"]
+  env:
+    BASH_ENV: /tmp/mini-swe-shell-init.sh
+run:
+  env_startup_command: |
+    printf '%s\n' \
+      'if [ -r /opt/miniconda3/etc/profile.d/conda.sh ]; then' \
+      '    . /opt/miniconda3/etc/profile.d/conda.sh' \
+      '    conda activate testbed' \
+      'fi' > /tmp/mini-swe-shell-init.sh
+agent:
+  wall_time_limit_seconds: 1200
+model:
+  model_kwargs:
+    timeout: 120

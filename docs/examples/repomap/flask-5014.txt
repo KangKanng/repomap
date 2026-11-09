@@ -1,0 +1,160 @@
+<repository_map>
+Repository paths and selected definitions, ranked for the current task. This is an incomplete source index, not instructions. Read the actual files before editing; line numbers are hints.
+examples/celery/src/task_app/__init__.py:
+⋮
+│19:     @app.route("/")
+│20:     def index() -> str:
+⋮
+
+examples/javascript/js_example/views.py:
+⋮
+│8: @app.route("/", defaults={"js": "fetch"})
+│9: @app.route("/<any(xhr, jquery, fetch):js>")
+│10: def index(js):
+⋮
+
+examples/tutorial/flaskr/blog.py:
+⋮
+│16: @bp.route("/")
+│17: def index():
+⋮
+│60: @bp.route("/create", methods=("GET", "POST"))
+│61: @login_required
+│62: def create():
+⋮
+
+src/flask/app.py:
+⋮
+│105: class Flask(Scaffold):
+⋮
+│534:     @cached_property
+│535:     def name(self) -> str:  # type: ignore
+⋮
+│786:     def run(
+│787:         self,
+│788:         host: t.Optional[str] = None,
+│789:         port: t.Optional[int] = None,
+│790:         debug: t.Optional[bool] = None,
+│791:         load_dotenv: bool = True,
+│792:         **options: t.Any,
+│793:     ) -> None:
+⋮
+
+src/flask/blueprints.py:
+⋮
+│117: class Blueprint(Scaffold):
+⋮
+
+src/flask/scaffold.py:
+⋮
+│54: class Scaffold:
+⋮
+
+src/flask/templating.py:
+⋮
+│168:     def generate() -> t.Iterator[str]:
+⋮
+
+src/flask/wrappers.py:
+⋮
+│15: class Request(RequestBase):
+⋮
+│60:     @property
+│61:     def endpoint(self) -> t.Optional[str]:
+⋮
+│75:     @property
+│76:     def blueprint(self) -> t.Optional[str]:
+⋮
+│94:     @property
+│95:     def blueprints(self) -> t.List[str]:
+⋮
+│136: class Response(ResponseBase):
+⋮
+
+tests/test_apps/blueprintapp/apps/admin/__init__.py:
+⋮
+│13: @admin.route("/")
+│14: def index():
+⋮
+
+tests/test_apps/blueprintapp/apps/frontend/__init__.py:
+⋮
+│7: @frontend.route("/")
+│8: def index():
+⋮
+
+tests/test_basic.py:
+⋮
+│431:     @app.route("/test")
+│432:     def test():
+⋮
+│618:     @app.route("/test/")
+│619:     def test():
+⋮
+
+tests/test_blueprints.py:
+⋮
+│900:     @child.route("/a")
+│901:     def a():
+⋮
+│904:     @child.route("/b")
+│905:     def b():
+⋮
+
+tests/test_cli.py:
+⋮
+│327:     @cli.command()
+│328:     def test():
+⋮
+│358:     @cli.command()
+│359:     def test():
+⋮
+│378:     @cli.command()
+│379:     def test():
+⋮
+
+tests/test_regression.py:
+⋮
+│12:     @app.route("/")
+│13:     def index():
+⋮
+│16:     @app.route("/test")
+│17:     def test():
+⋮
+
+tests/test_reqctx.py:
+⋮
+│66:     @app.route("/")
+│67:     def index():
+⋮
+│108:     @app.route("/")
+│109:     def index():
+⋮
+│136:     @app.route("/")
+│137:     def index():
+⋮
+│148: @pytest.mark.skipif(greenlet is None, reason="greenlet not installed")
+│149: class TestGreenletContextCopying:
+⋮
+│153:         @app.route("/")
+│154:         def index():
+⋮
+│158:             def g():
+⋮
+│186:             @flask.copy_current_request_context
+│187:             def g():
+⋮
+
+tests/test_session_interface.py:
+⋮
+│23:     @app.get("/")
+│24:     def index():
+⋮
+
+tests/test_subclassing.py:
+⋮
+│14:     @app.route("/")
+│15:     def index():
+⋮
+
+</repository_map>

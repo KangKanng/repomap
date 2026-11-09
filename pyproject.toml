@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mini-swe-repomap"
+version = "0.1.0"
+description = "A token-budgeted, task-aware repository map for mini-swe-agent v2"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+dependencies = [
+    "python-dotenv>=1.0",
+    "litellm>=1.105.1,<1.106",  # 1.106.x tool calls require optional proxy/MCP imports.
+    "mini-swe-agent>=2.4.6,<3",
+    "tree-sitter-language-pack>=0.13,<1",
+    "tree-sitter>=0.25.2,<0.26",  # 0.26.0 crashes on repeated AST walks in the repository smoke test.
+    "tiktoken>=0.8",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.9", "build"]
+
+[project.scripts]
+mini-repomap = "mini_swe_repomap.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+mini_swe_repomap = ["config/*.yaml"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E501"]

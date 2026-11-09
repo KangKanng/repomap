@@ -1,0 +1,6 @@
+agent:
+  agent_class: mini_swe_repomap.agent.InteractiveRepoMapAgent
+  repomap:
+    map_tokens: 1024
+    root: "."
+    refresh_interval: 1

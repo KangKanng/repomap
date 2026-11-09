@@ -1,0 +1,9 @@
+agent:
+  repomap:
+    map_tokens: 1024
+    refresh: once
+    context_messages: 0
+    strict: true
+    max_files: 20000
+    max_file_bytes: 1073741824
+    max_total_bytes: 134217728
